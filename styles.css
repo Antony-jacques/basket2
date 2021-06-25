@@ -1,0 +1,267 @@
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+#menu {
+  background-color: #f9c852;
+  height: 7rem;
+  position: fixed;
+  width: 100%;
+}
+
+#menu ul li {
+  float: left;
+  margin: 0 1.5rem;
+}
+
+#menu ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.lien-menu {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.lien-menu:hover {
+  font-size: 2.5rem;
+}
+
+nav {
+  float: right;
+  line-height: 7rem;
+  z-index: 1;
+}
+
+nav a {
+  margin-right: 2rem;
+}
+
+#logo {
+  float: left;
+  height: 7rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .nom-joueur {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    color: white;
+  }
+
+  ol .grid-item {
+    position: relative;
+  }
+
+  #menu {
+    position: static;
+  }
+}
+
+#main-image {
+  background-image: url("images/banniere.jpg");
+  height: 32rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slogan {
+  margin: 0rem auto 3rem auto;
+  width: 100%;
+  padding-top: 9rem;
+  color: #fff;
+  text-align: center;
+}
+
+#slogan h1 {
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-shadow: #fc0 1px 0 10px;
+}
+
+#accueil {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.description {
+  text-align: justify;
+}
+
+.grid {
+  padding: 0.5rem;
+  transition: 0.3s ease;
+}
+
+#ball {
+    /*background-color: aqua;*/
+    position:relative;
+    width:500px;
+    height: 400px;
+    overflow: hidden;
+    display:none;
+  
+  }
+  #innerBall {
+    /*background-color: red;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    top: 30%;
+    left:30%;
+   /* transform: translate(50%,50%)*/
+  }
+  
+  #imgBall{
+      width:200 !important;
+      height:200;
+  }
+  
+
+
+
+#histoire {
+  padding: 1rem;
+}
+
+#joueurs {
+  background: #fff8ee;
+  padding: 1rem;
+  /*background-image: url(images/texture.jpg);*/
+}
+
+.grid-item {
+  background-color: #f9c852;
+  padding: 1rem;
+}
+
+.image-joueur {
+  width: 17rem;
+  height: 12rem;
+}
+
+.nom-joueur {
+  float: right;
+}
+
+.stat {
+  display: none;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.stat:hover {
+  color: blue;
+}
+
+#joueurs li:hover {
+  /*
+ border:solid 	#981717;
+ */
+  border: solid 1px #fff;
+}
+
+#joueurs li:hover .stat {
+  display: block;
+  opacity: 1;
+}
+
+.inputs {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 15rem;
+}
+
+.inputs:hover {
+  /*border-color: #f9c852;*/
+  border-color: #ffb300;
+}
+
+#form-message:hover {
+  border-color: #ffb300;
+}
+
+section {
+  -webkit-box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  background-color: #18191d;
+  color: white;
+}
+
+#a-propos {
+  padding: 1rem;
+}
+
+#contact {
+  padding: 1rem;
+}
+
+.contact-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#retour-accueil {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: brown;
+  text-decoration: none;
+  border: solid;
+  border-style: dashed;
+}
+
+@media (min-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5em;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5em;
+    }
+  
+    #ball{  
+        /*background-color: aqua;*/
+      position:relative;
+      width:100%;
+      height: 400px;
+      overflow: hidden;
+      display:block;}
+  
+    #retour-accueil {
+      display: none;
+    }
+  
+    .description {
+      text-align: justify;
+      line-height:3rem;
+    }
+
+    #histoire{
+        line-height:3rem; 
+    }
+  }
